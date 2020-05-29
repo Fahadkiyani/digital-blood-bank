@@ -1,9 +1,14 @@
 const express = require('express');
+var path = require('path');
 const bodyParser = require('body-parser');
 const mongoose =require('mongoose');
 require('dotenv/config');
 
 const app = express();
+
+
+// static path to public
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -17,16 +22,8 @@ app.set('view engine', 'ejs');
 
 // root route
 app.get('/', (req,res)=>{
-    res.send('This is the root directory of website.');
-    // const users = new user({
-    //   fname:"fahad",
-    //   lname:"kiani",
-    //   email:"fahadkiyani08@gmail.com",
-    //   password:"password",
-    // });
+    res.render('pages/index');
     
-    // console.log(users);
-    // users.save().then().catch(err => console.log(err));
 });
 
 // Database connect
