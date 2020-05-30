@@ -16,17 +16,10 @@
 
 This application is made by using following resources:
 - Front end:
-Ejs
-Vanila javascript
-Css
-Html
+Ejs,Vanila javascript,Css,Html
 
 - Back end:
-Nodejs
-expressjs
-bcrypt
-jwt
-Mongodb(google cloud server)
+Nodejs,expressjs,bcrypt,jwt,Mongodb(google cloud server)
 
  ## Will it be secured
  
