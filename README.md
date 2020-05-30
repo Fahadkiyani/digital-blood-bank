@@ -13,7 +13,9 @@
  This app would be very simple to use. Even a illitrate person will be able to use this app. We will make its UI/UX user friendly a person would only have to enter the blood type in input and the app will tell him which blood can be used for tranfusion for him. 
 
  ## Will it be secured
+ 
 Yes!
+
 ---
 ## Contributors
 
