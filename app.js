@@ -31,7 +31,7 @@ app.post('/datalist',(req,res)=>{
   console.log(req.body.bloodType);
 })
 app.get('/video',(req,res,next)=>{
-  res.redirect('https://www.youtube.com/watch?v=RvzL7ZU_r58');
+  res.redirect('https://morning-taiga-11184.herokuapp.com/video');
 next();
 })
 
