@@ -1,4 +1,5 @@
 const express = require('express');
+const router = express.Router();
 var path = require('path');
 const bodyParser = require('body-parser');
 const mongoose =require('mongoose');
@@ -23,7 +24,7 @@ app.set('view engine', 'ejs');
 // root route
 app.get('/', (req,res)=>{
     res.render('pages/index');
-    
+    res.status(404).end()
 });
 
 // Database connect
