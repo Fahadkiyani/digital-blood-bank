@@ -12,6 +12,22 @@
 ## How to use this app
  This app would be very simple to use. Even a illitrate person will be able to use this app. We will make its UI/UX user friendly a person would only have to enter the blood type in input and the app will tell him which blood can be used for tranfusion for him. 
 
+## Resources used to make this happened
+
+This application is made by using following resources:
+- Front end:
+Ejs
+Vanila javascript
+Css
+Html
+
+- Back end:
+Nodejs
+expressjs
+bcrypt
+jwt
+Mongodb(google cloud server)
+
  ## Will it be secured
  
 Yes!
