@@ -9,8 +9,11 @@
  
  On the other hand, a person, who needs the blood he will come to our website and see the details which blood type he needs and he can contact the person.
 
+## How to use this app
+ This app would be very simple to use. Even a illitrate person will be able to use this app. We will make its UI/UX user friendly a person would only have to enter the blood type in input and the app will tell him which blood can be used for tranfusion for him. 
+
  ## will it be secured
-Yes! the person who needs the blood would only be able to send ping to donner and in result the donner will make contact on the platform.
+Yes!
 
 
 ---
