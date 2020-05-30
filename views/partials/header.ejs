@@ -1,26 +1,28 @@
 
 <body>
-    <div class="head-nav">
-        <div class="header-image-conatainer-01"><img class="dbb-logo" src="/static/images/dbb logo v0.2.png"   alt="Digital blood bank logo">
-            <div class="header-website-name"><h1>OBB</h1></div>
+    <div class="head-navbar">
+        <div class="logo-container">
+            <div class="header-image-conatainer"><img class="dbb-logo" src="/static/images/dbb logo v0.2.png"   alt="Digital blood bank logo"></div>
+                <div class="header-website-name"><h1>OBB | </h1><p> Digital Blood Bank</p></div>
         </div>
-          
-        <div class="header-form"><form action="/datalist" method="POST">
-            <label for="bloodType">Blood type:</label>
-            <input list="blood" name="bloodType" id="bloodType" placeholder="Your blood type...">
-            <datalist id="blood">
-                <option value="A+">
-                <option value="A-">
-                <option value="B+">
-                <option value="B-">
-                <option value="O+">
-                <option value="O-">
-                <option value="AB+">
-                <option value="AB-">    
-            </datalist>
-            <input type="submit">
-          </form></div>
-          
+        <div class="header-form">
+            <form action="/datalist" method="POST">
+                <!-- <label for="bloodType" class="bloodType">Blood type:</label> -->
+                <input list="blood" name="bloodType" id="bloodType" placeholder="Your blood type...">
+                <datalist id="blood">
+                    <option value="A+">
+                    <option value="A-">
+                    <option value="B+">
+                    <option value="B-">
+                    <option value="O+">
+                    <option value="O-">
+                    <option value="AB+">
+                    <option value="AB-">    
+                </datalist>
+                <input type="submit" value="Match">
+          </form>
+        </div>
+        <a class="about" href="/about">about</a>
     </div>
 
 

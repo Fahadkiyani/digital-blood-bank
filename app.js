@@ -1,5 +1,4 @@
 const express = require('express');
-const router = express.Router();
 var path = require('path');
 const bodyParser = require('body-parser');
 const mongoose =require('mongoose');
@@ -7,13 +6,15 @@ require('dotenv/config');
 
 const app = express();
 
-
+// Middleware's
 // static path to public
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
  
+// router routes middleware
+
 
 
 // parse application/json
@@ -21,11 +22,18 @@ app.use(bodyParser.json());
 // view engine embedded js
 app.set('view engine', 'ejs');
 
-// root route
+// http request Endpoints
 app.get('/', (req,res)=>{
     res.render('pages/index');
     res.status(404).end()
 });
+app.post('/datalist',(req,res)=>{
+  console.log(req.body.bloodType);
+})
+app.get('/video',(req,res,next)=>{
+  res.redirect('https://www.youtube.com/watch?v=RvzL7ZU_r58');
+next();
+})
 
 // Database connect
 mongoose.connect(process.env.db_connection_string,{useNewUrlParser:true,useUnifiedTopology: true,keepAlive: true})
