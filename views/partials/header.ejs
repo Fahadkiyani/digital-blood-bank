@@ -3,12 +3,12 @@
     <div class="head-navbar">
         <div class="logo-container">
             <div class="header-image-conatainer"><img class="dbb-logo" src="/static/images/dbb logo v0.2.png"   alt="Digital blood bank logo"></div>
-                <div class="header-website-name"><h1>OBB | </h1><p> Digital Blood Bank</p></div>
+                <div class="header-website-name"><h1>OBB </h1>|<p> Digital Blood Bank</p></div>
         </div>
         <div class="header-form">
             <form action="/datalist" method="POST">
                 <!-- <label for="bloodType" class="bloodType">Blood type:</label> -->
-                <input list="blood" name="bloodType" id="bloodType" placeholder="Your blood type...">
+                <input list="blood" name="bloodType" id="bloodType-input" placeholder="Your blood type">
                 <datalist id="blood">
                     <option value="A+">
                     <option value="A-">
@@ -19,11 +19,17 @@
                     <option value="AB+">
                     <option value="AB-">    
                 </datalist>
-                <input type="submit" value="Match">
+                <input type="submit" value="Match" id="head-submit-btn">
           </form>
         </div>
-        <a class="about" href="/about">about</a>
+    
+        <!-- login signup -->
+    <div class="login-signup-container">
+            <a class="login" href="/Login">Login</a>
+            <p>or</p>
+            <a class="signup" href="/signup">Signup</a>
     </div>
+</div>
 
 
 
