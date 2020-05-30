@@ -31,7 +31,7 @@ app.post('/datalist',(req,res)=>{
   console.log(req.body.bloodType);
 })
 app.get('/video',(req,res,next)=>{
-  res.redirect('https://morning-taiga-11184.herokuapp.com/video');
+  res.send('<h1 style="font-family: \'Roboto\', sans-serif; "> Video cannot be accessed, please try again.</h1><a href="/">try again!</a>');
 next();
 })
 
