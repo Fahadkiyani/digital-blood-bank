@@ -132,7 +132,20 @@ body{
     height: 450px;
     display: flex;
 }
-.legend-img{
-    width: inherit;
+    .legend-img{
+        width: inherit;
+    }
+.underpic-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #222222;
+    box-shadow: 2px 2px 4px #666666;
+}
+.underpic-detail p{
+    color:#bbbbbb;
+    font-weight: 100;
+    font-size: 0.9rem;
+    /* margin-left: 20px; */
 }
     
