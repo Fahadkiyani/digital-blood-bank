@@ -24,7 +24,7 @@ body{
             margin-left: 20px;
             height: inherit;
             flex-grow: 1;
-            background-color: burlywood;
+            /* background-color: burlywood; */
         }
         .header-image-conatainer{
         display: flex;
@@ -61,7 +61,7 @@ body{
             margin-right: 10px;
             flex-grow: 10;
             flex-basis: 600px;
-            background-color: brown;
+            /* background-color: brown; */
             min-width: 680px;
             }
                 #bloodType-input{
