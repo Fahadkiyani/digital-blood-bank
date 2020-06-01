@@ -21,9 +21,10 @@ body{
         .logo-container{
             display: flex;
             flex-direction: row;
-            padding:0 20px;
+            margin-left: 20px;
             height: inherit;
             flex-grow: 1;
+            background-color: burlywood;
         }
         .header-image-conatainer{
         display: flex;
@@ -56,12 +57,16 @@ body{
       
 /* form container */
         .header-form{
-            margin-left: 40px;
-            flex-grow: 4;
+            margin-left:10px;
+            margin-right: 10px;
+            flex-grow: 10;
             flex-basis: 600px;
+            background-color: brown;
+            min-width: 680px;
             }
                 #bloodType-input{
-                width: 40vw;
+                width: 580px;
+                min-width: 350px;
                 height:45px;
                 padding: 0 10px;
                 border-radius: 8px 0 0 8px;
@@ -71,7 +76,7 @@ body{
                 }#bloodType-input:hover{cursor: pointer;}
 
                 #head-submit-btn{
-                width: 80px;
+                min-width: 100px;
                 height:45px;
                 padding: 0 10px;
                 border-radius:0 8px 8px 0;
@@ -96,6 +101,7 @@ body{
             align-self: end;
             align-self: center;
             margin-right: 20px;
+            background-color: transparent;
         }
             .login{
                 background-color: #ff4571;
