@@ -39,7 +39,7 @@ next();
 // mongoose.connect(process.env.db_connection_string,{useNewUrlParser:true,useUnifiedTopology: true,keepAlive: true})
 // 	.then(()=>console.log(`\n Mongodb is connected `))
 //   .catch((error)=>console.log(error));
-mongoose.connect("mongodb://harvey:134679852%40alpha@cluster0-shard-00-00-jw5yi.gcp.mongodb.net:27017,cluster0-shard-00-01-jw5yi.gcp.mongodb.net:27017,cluster0-shard-00-02-jw5yi.gcp.mongodb.net:27017/dbb?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority",{useNewUrlParser:true,useUnifiedTopology: true,keepAlive: true})
+mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser:true,useUnifiedTopology: true,keepAlive: true})
 	.then(()=>console.log(`\n Mongodb is connected `))
   .catch((error)=>console.log(error));
   
