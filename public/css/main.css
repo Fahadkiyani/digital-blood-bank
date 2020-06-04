@@ -2,6 +2,32 @@
 * {
     box-sizing: border-box;
   }
+::-webkit-scrollbar{
+    width: 5px;
+    position: absolute;
+    height: 0;
+}
+::-webkit-scrollbar-track{
+    background-color: #888888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track:hover{
+    background-color: #777777;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #444444;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #333333;
+}
+/************* Header.ejs ***************/
+/************** Media For landscape *************/
+@media (orientation:landscape) and (min-width:1024px){
+    html{
+        width: 100vw;
+    }
 body{
     margin: 0;
     padding: 0;
@@ -10,7 +36,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
     .head-navbar{
-        width: 100%;
+        width: 100vw;
         height: 70px;
         border: 1px solid #ededed;
         display: flex;
@@ -27,7 +53,7 @@ body{
             flex-direction: row;
             margin-left: 20px;
             height: inherit;
-            flex-grow: 1;
+            flex-grow:1;
             /* background-color: burlywood; */
         }
         .header-image-conatainer{
@@ -40,7 +66,6 @@ body{
                 max-width: 60px;
                 max-height: 60px;
                 margin-left: 20px;
-                
                 margin-bottom: 15px;
             }
             .header-website-name{
@@ -63,14 +88,23 @@ body{
         .header-form{
             margin-left:10px;
             margin-right: 10px;
-            flex-grow: 10;
-            flex-basis: 600px;
-            /* background-color: brown; */
-            min-width: 680px;
+            /* min-width: 680px; */
+            flex-grow:6;
+            /* background-color: red; */
+            }
+            .header-form form{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                /* background-color: royalblue; */
+            }
+            .datalist-input-span{
+                flex-grow: 6;
             }
                 #bloodType-input{
-                width: 580px;
-                min-width: 350px;
+                width: 100%;
+                /* min-width: 350px; */
                 height:45px;
                 padding: 0 10px;
                 border-radius: 8px 0 0 8px;
@@ -78,38 +112,41 @@ body{
                 outline: none;
                 color: #e60000;
                 }#bloodType-input:hover{cursor: pointer;}
+                .head-submit-btn {
 
-                #head-submit-btn{
-                min-width: 100px;
+                }
+                .head-submit-btn{
+                    flex-grow: 2;
+                    justify-content: center;
+                }
+                .head-submit-btn input{
+                min-width: 100%;
+                /*  */
                 height:45px;
-                padding: 0 10px;
                 border-radius:0 8px 8px 0;
+                padding: 0 10px;
                 border: none;
                 background-color: black;
                 color: white;
                 font-size: 1rem;
                 outline: none;
-                margin-left: -4px;
-                margin-top: 1px;
-                }#head-submit-btn:hover{cursor: pointer;}
-        /* bloodType{
-            color: rgb(58, 58, 58);
-            font-family: 'Roboto', sans-serif;
-        } */
+                /* margin-left: -4px;
+                margin-top: 1px; */
+                }.head-submit-btn input:hover{cursor: pointer;}
 
 /* login signup */
         .login-signup-container{
             display: flex;
             flex-direction: row;
+            flex-grow: 2;
             align-items: center;
-            align-self: end;
-            align-self: center;
-            margin-right: 20px;
-            background-color: transparent;
+            justify-content: center;
+            padding:auto 20px;
+            /* background-color: green; */
         }
             .login{
                 background-color: #ff4571;
-                padding:6px 12px;
+                padding:6px 20px;
                 border-radius: 6.5px;
                 text-decoration: none;
                 color: white;
@@ -121,7 +158,7 @@ body{
                 margin-left: 5px;
             }
             .signup{
-                padding:6px 12px;
+                padding:5px 12px;
                 color:#ff4571 ;
                 border:1px solid#ff4571;
                 border-radius: 6.5px;
@@ -130,12 +167,12 @@ body{
                 font-weight: 300;
             }.signup:hover{cursor: pointer;}
 
+/********** Index.ejs *********/
 /* legend image */
 .legend-container{
-    width: 100%;
+    width: 100vw;
     height: calc(600px - 70px - 3rem);
     min-width: 800px;
-    /* height: 450px; */
     display: flex;
     align-items: center;
    flex-direction: row;
@@ -156,8 +193,6 @@ body{
         }
         .create-account{
             padding: 10px;
-            /* color:#ff3333;
-            border-color:#ff3333 ; */
         }
         .legend-txt-container h1{
             font-size: 2.6rem;
@@ -172,11 +207,9 @@ body{
         flex: 2.5;
         justify-content: center;
         align-items: center;
-        /* background-color: black; */
     }
     .legend-img{
         width:350px;
-        /* right: 150px; */
     }
 
 .underpic-detail{
@@ -190,8 +223,12 @@ body{
     color:#bbbbbb;
     font-weight: 100;
     font-size: 0.9rem;
-    /* margin-left: 20px; */
+
 }
     .h11{
         height: 2000px;
     }
+
+
+}
+/********* Media landscape ends here **********/

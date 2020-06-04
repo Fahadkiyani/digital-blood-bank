@@ -14,6 +14,8 @@ app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({ extended: false }));
  
 // router routes middleware
+const usersRoutes = require('./routes/users')
+app.use("/user", usersRoutes);
 
 
 
@@ -42,6 +44,8 @@ next();
 mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser:true,useUnifiedTopology: true,keepAlive: true})
 	.then(()=>console.log(`\n Mongodb is connected `))
   .catch((error)=>console.log(error));
+
+
   
 // User Schema
 const userSchema = new mongoose.Schema({

@@ -8,6 +8,7 @@
         <div class="header-form">
             <form action="/datalist" method="POST">
                 <!-- <label for="bloodType" class="bloodType">Blood type:</label> -->
+               <div class="datalist-input-span">
                 <input list="blood" name="bloodType" id="bloodType-input" placeholder="Your blood type">
                 <datalist id="blood">
                     <option value="A+">
@@ -19,17 +20,20 @@
                     <option value="AB+">
                     <option value="AB-">    
                 </datalist>
-                <input type="submit" value="Match" id="head-submit-btn">
+               </div>
+               <div class="head-submit-btn">
+                <input type="submit" value="Match">
+               </div>
           </form>
         </div>
     
         <!-- login signup -->
-    <div class="login-signup-container">
-            <a class="login" href="/Login">Login</a>
+        <div class="login-signup-container">
+            <a class="login" href="/user/login">Login</a>
             <p>or</p>
-            <a class="signup" href="/signup">Signup</a>
+            <a class="signup" href="/user/signup">Signup</a>
+        </div>
     </div>
-</div>
 
 
 
