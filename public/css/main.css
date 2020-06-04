@@ -116,7 +116,7 @@ body{
 
                 }
                 .head-submit-btn{
-                    flex-grow: 2;
+                    flex-grow: 1;
                     justify-content: center;
                 }
                 .head-submit-btn input{
@@ -229,6 +229,4 @@ body{
         height: 2000px;
     }
 
-
-}
-/********* Media landscape ends here **********/
+}/********* Media landscape ends here **********/
