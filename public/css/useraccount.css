@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+  }
+::-webkit-scrollbar{
+    width: 5px;
+    position: absolute;
+    height: 0;
+}
+::-webkit-scrollbar-track{
+    background-color: #888888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track:hover{
+    background-color: #777777;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #444444;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #333333;
+}
+/**********Body********/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fbfcf9;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/******Header Navbar*******/
+.head-navbar{
+    width: 100vw;
+    height: 70px;
+    border: 1px solid #ededed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+/* logo */
+    .logo-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        height: inherit;
+        flex-grow:5;
+        /* background-color: burlywood; */
+    }
+    .header-image-conatainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   
+    }
+        .dbb-logo{
+            max-width: 60px;
+            max-height: 60px;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .header-website-name{
+        display: flex;
+        align-items: center; 
+        font-family: 'Times New Roman', Times, serif;
+        color: #111111;
+        margin-left: 8px;
+        
+        }.header-website-name h1{
+            margin-right: 5px;
+        }
+        .header-website-name p{
+            margin-left: 5px;
+            color: #333333;
+            font-size: 0.8rem;
+        }
+        .signup-header-home-btn{
+            display: flex;
+            flex-direction: row;
+            flex-grow: 5;
+            /* background-color: red; */
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .signup-header-home-btn .home{
+            /* display: flex;
+            flex-direction: row; */
+            text-decoration: none;
+            color: black;
+        }
+        .signup-header-home-btn .home i{
+            font-size: 1rem;
+            margin-right: 2px;
+        }
+        .signup-header-home-btn p{
+            color: #999999;
+            font-size: 15px;
+            margin: auto 10px;
+        }
+        .signup-header-home-btn .login{
+            color: dodgerblue;
+        }
+/********* Sigup form ************/
+.signupform form {
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  margin: 50px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 2px;
+}
+ .signupform h2 {
+    margin:0 0 30px 0;
+    padding:10px;
+    text-align:center;
+    font-size:2rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    /* color:darken(#e5e5e5, 50%); */
+    border-bottom:solid 1px #e5e5e5;
+  }
+  .signupform p {
+    margin: 0 0 1.2rem 0;
+    font-size: 1rem;
+    /* position: relative; */
+  }
+  .signupform input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    margin:0;
+  }
+  .signupform input[type="text"],
+  .signupform input[type="password"] {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    padding: .8em .5em;
+    border-radius: 2px;
+  }
+  .signupform input[type="text"]:focus,
+  .signupform input[type="password"]:focus {
+    background: #fff;
+    box-shadow: 1px 1px 2px #dedede;
+  }
+  .signupform span {
+    display:none;
+    background: #F9A5A5;
+    padding: 2px 5px;
+    color: #666;
+  }
+  .signupform input[type="submit"] {
+    /* box-shadow: 0 3px 0 0 darken($button, 10%); */
+    background-color: rgb(91, 132, 178);
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    line-height:2em;
+    margin: 2em 0 6rem;
+    outline: none;
+    /* padding: 2rem 0; */
+    text-shadow: 0 1px #68B25B;
+    /* padding: 10px auto; */
+  }
+  .signupform label{
+      font-size: 0.8rem;
+  }
+}

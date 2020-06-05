@@ -1,0 +1,38 @@
+<%- include('../partials/signuphead'); -%>
+
+<!-- BODY -->
+<div class="head-navbar">
+    <div class="logo-container">
+        <div class="header-image-conatainer"><img class="dbb-logo" src="/static/images/dbb logo v0.2.png"   alt="Digital blood bank logo"></div>
+            <div class="header-website-name"><h1>OBB </h1>|<p> Digital Blood Bank</p></div>
+    </div>
+
+    <!-- Home button -->
+        <div class="signup-header-home-btn">
+            <a class="home" href="/"><i class="fas fa-home"></i>Home</a>
+            <p>|</p>
+            <a class="login" href="/user/signup">Sign up</a>
+
+        </div>
+</div>
+<div class="signupform">
+<form action="/login" method="post">
+        
+    <h2>Login</h2>
+          <p>
+              <label for="Email" class="floatLabel">Email</label>
+              <input id="Email" name="Email" type="text">
+          </p>
+          <p>
+              <label for="password" class="floatLabel">Password</label>
+              <input id="password" name="password" type="password">
+          </p>
+          <p>
+              <input type="submit" value="Login" id="submit">
+          </p>
+</form>
+</div>
+
+
+
+<%- include('../partials/signupfooter'); -%>

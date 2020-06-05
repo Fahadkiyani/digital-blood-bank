@@ -1,26 +1,49 @@
+<%- include('../partials/signuphead'); -%>
+
+<!-- BODY -->
 <div class="head-navbar">
     <div class="logo-container">
         <div class="header-image-conatainer"><img class="dbb-logo" src="/static/images/dbb logo v0.2.png"   alt="Digital blood bank logo"></div>
             <div class="header-website-name"><h1>OBB </h1>|<p> Digital Blood Bank</p></div>
     </div>
 
-    <!-- login signup -->
-    <div class="login-signup-container">
-        <a class="login" href="/Login">Login</a>
-        <p>or</p>
-        <a class="signup" href="/signup">Signup</a>
+    <!-- Home button -->
+        <div class="signup-header-home-btn">
+            <a class="home" href="/"><i class="fas fa-home"></i>Home</a>
+            <p>|</p>
+            <a class="login" href="/user/login">Login</a>
+
+        </div>
     </div>
-</div>
 
 
 <div class="signupform">
     <form action="/signup" method="post">
-        <div class="signup-h1"><h1>Signup Form</h1></div>
         
-        <div class="signup-names">
-            <label for="fname">First Name</label>
-            <input type="text" name="fname">
-        </div>
-        
+            <h2>Sign Up</h2>
+                  <p>
+                      <label for="Email" class="floatLabel">Email</label>
+                      <input id="Email" name="Email" type="text">
+                  </p>
+                  <p>
+                      <label for="password" class="floatLabel">Password</label>
+                      <input id="password" name="password" type="password">
+                      <span>Enter a password longer than 8 characters</span>
+                  </p>
+                  <p>
+                      <label for="confirm_password" class="floatLabel">Confirm Password</label>
+                      <input id="confirm_password" name="confirm_password" type="password">
+                      <span>Your passwords do not match</span>
+                  </p>
+                  <p>
+                    <button type="button" onclick="signupNext();">Next</button>
+                </p>
+                  <!-- <p>
+                      <input type="submit" value="Create My Account" id="submit">
+                  </p> -->
     </form>
 </div>
+
+
+
+<%- include('../partials/signupfooter'); -%>

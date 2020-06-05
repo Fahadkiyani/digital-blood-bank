@@ -132,6 +132,9 @@ body{
                 outline: none;
                 }
                 .head-submit-btn input:hover{cursor: pointer;}
+                datalist{
+                    color: red;
+                }
 
 /* login signup */
         .login-signup-container{
