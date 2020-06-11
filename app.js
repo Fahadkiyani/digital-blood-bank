@@ -44,18 +44,8 @@ next();
 mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser:true,useUnifiedTopology: true,keepAlive: true})
 	.then(()=>console.log(`\n Mongodb is connected `))
   .catch((error)=>console.log(error));
+mongoose.Promise = global.Promise;
 
-
-  
-// User Schema
-const userSchema = new mongoose.Schema({
-	fname: {type:String,required:true},
-	lname:{type:String,required:true},
-	email:{type:String,required:true},
-	password:{type:String,required:true},
-});
-
-const user = mongoose.model('userdata', userSchema);
 
 
 

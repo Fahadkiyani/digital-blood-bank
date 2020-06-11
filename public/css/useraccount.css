@@ -97,7 +97,7 @@ body{
         }
         .signup-header-home-btn .home i{
             font-size: 1rem;
-            margin-right: 2px;
+            margin-right: 5px;
         }
         .signup-header-home-btn p{
             color: #999999;
@@ -111,8 +111,8 @@ body{
 .signupform form {
   background: #fff;
   padding: 4em 4em 2em;
-  max-width: 400px;
-  margin: 50px auto 0;
+  max-width: 500px;
+  margin: 50px auto 5rem;
   box-shadow: 0 0 1em #222;
   border-radius: 2px;
 }
@@ -129,8 +129,16 @@ body{
   .signupform p {
     margin: 0 0 1.2rem 0;
     font-size: 1rem;
+
     /* position: relative; */
   }
+  .signup-name{
+    display: flex;
+    flex-direction: row;
+}
+.signup-name p:nth-child(1){
+   margin-right: 10px;     
+}
   .signupform input {
     display: block;
     box-sizing: border-box;
@@ -138,6 +146,7 @@ body{
     outline: none;
     margin:0;
   }
+  
   .signupform input[type="text"],
   .signupform input[type="password"] {
     background: #fff;
@@ -148,18 +157,33 @@ body{
   }
   .signupform input[type="text"]:focus,
   .signupform input[type="password"]:focus {
-    background: #fff;
+    background: rgba(241, 241, 241, 0.5);
+    border-color: #999999;
     box-shadow: 1px 1px 2px #dedede;
   }
-  .signupform span {
-    display:none;
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #999999;
+    opacity:0.6; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #999999;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #999999;
+  }
+
+  .signupform #password-not-matched {
     background: #F9A5A5;
     padding: 2px 5px;
     color: #666;
+    display: none;
+    /* position: relative; */
   }
-  .signupform input[type="submit"] {
+  .signupform input[type="button"],.signupform input[type="submit"] {
     /* box-shadow: 0 3px 0 0 darken($button, 10%); */
-    background-color: rgb(91, 132, 178);
+    background-color:rgb(43, 185, 102);
     border-radius: 2px;
     border: none;
     color: #fff;
@@ -167,13 +191,100 @@ body{
     display: block;
     font-size: 1em;
     line-height:2em;
-    margin: 2em 0 6rem;
+    margin: 2em 0 3rem;
     outline: none;
-    /* padding: 2rem 0; */
-    text-shadow: 0 1px #68B25B;
-    /* padding: 10px auto; */
+    padding: 8px 0;
+    text-shadow: 0 1px rgb(24, 122, 7);
   }
   .signupform label{
       font-size: 0.8rem;
   }
+
+.already-a-member{
+    /* margin: 0px auto; */
+    color: #555555;
 }
+
+.already-a-member a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+
+
+
+/* Login Form */
+.loginform form {
+    background: #fff;
+    padding: 4em 4em 2em;
+    max-width: 500px;
+    margin: 50px auto 5rem;
+    box-shadow: 0 0 1em #222;
+    border-radius: 2px;
+  }
+  .loginform h2 {
+    margin:0 0 30px 0;
+    padding:10px;
+    text-align:center;
+    font-size:2rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    /* color:darken(#e5e5e5, 50%); */
+    border-bottom:solid 1px #e5e5e5;
+  }
+  .loginform p {
+    margin: 0 0 1.2rem 0;
+    font-size: 1rem;
+
+    /* position: relative; */
+  }
+  .loginform input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    outline: none;
+    margin:0;
+  }
+  
+  .loginform input[type="text"],
+  .loginform input[type="password"] {
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+    padding: .8em .5em;
+    border-radius: 2px;
+  }
+  .loginform input[type="text"]:focus,
+  .loginform input[type="password"]:focus {
+    background: #fff;
+    box-shadow: 1px 1px 2px #dedede;
+  }
+  .loginform input[type="submit"] {
+    box-shadow: 0 3px 0 0 rgb(54, 107, 160);
+    background-color:rgb(71, 141, 211);
+    border-radius: 2px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    line-height:2em;
+    margin: 2em 0 3rem;
+    outline: none;
+    padding: 8px 0;
+    text-shadow: 0 1px #68B25B;
+  }
+  .signupform label{
+      font-size: 0.8rem;
+  }
+
+  .not-a-member{
+    /* margin: 0px auto; */
+    color: #333333;
+}
+
+.already-a-member a{
+    text-decoration: none;
+    color: dodgerblue;
+}
+

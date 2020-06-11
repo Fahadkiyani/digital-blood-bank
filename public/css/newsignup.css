@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    box-sizing: border-box;
+  }
+::-webkit-scrollbar{
+    width: 5px;
+    position: absolute;
+    height: 0;
+}
+::-webkit-scrollbar-track{
+    background-color: #888888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track:hover{
+    background-color: #777777;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #444444;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #333333;
+}
+/**********Body********/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #fbfcf9;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/******Header Navbar*******/
+.head-navbar{
+    width: 100vw;
+    height: 70px;
+    border: 1px solid #ededed;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+/* logo */
+    .logo-container{
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        height: inherit;
+        flex-grow:5;
+        /* background-color: burlywood; */
+    }
+    .header-image-conatainer{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+   
+    }
+        .dbb-logo{
+            max-width: 60px;
+            max-height: 60px;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .header-website-name{
+        display: flex;
+        align-items: center; 
+        font-family: 'Times New Roman', Times, serif;
+        color: #111111;
+        margin-left: 8px;
+        
+        }.header-website-name h1{
+            margin-right: 5px;
+        }
+        .header-website-name p{
+            margin-left: 5px;
+            color: #333333;
+            font-size: 0.8rem;
+        }
+
+    .user{
+        /* background-color: red; */
+        display: flex;
+        flex-grow: 5;
+        align-items: center;
+        justify-content: center;
+    }
+    .user .welcome{
+        color: #333333;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .header-nav-username{
+            color:rgb(190, 40, 40);
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 6px;
+        }

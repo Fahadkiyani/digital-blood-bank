@@ -147,22 +147,23 @@ body{
             /* background-color: green; */
         }
             .login{
-                background-color: #ff4571;
-                padding:6px 20px;
+                background-color:white;
+                padding:6px 6px;
                 border-radius: 6.5px;
                 text-decoration: none;
-                color: white;
+                color: #ff4571;
                 margin-left: 15px;
                 font-weight: 300;
             }.login:hover{cursor: pointer;}
             .login-signup-container p{
                 color: #555555;
-                margin-left: 5px;
+                margin:auto 5px;
             }
             .signup{
                 padding:5px 12px;
-                color:#ff4571 ;
-                border:1px solid#ff4571;
+                color:white ;
+                border:1px solid#fa154b;
+                background-color: #fa154b;
                 border-radius: 6.5px;
                 text-decoration: none;
                 margin-left: 5px;
