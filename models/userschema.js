@@ -5,8 +5,7 @@ const userSchema = new mongoose.Schema({
 	fname: {type:String,required:true},
 	lname:{type:String,required:true},
 	email:{type:String,required:true},
-	password:{type:String,min:6,max:32,required:true},
-	confirm_password:{type:String,min:6,max:32,required:true}
+	password:{type:String,min:8,max:32,required:true}
 });
 
 const user = mongoose.model('user', userSchema);

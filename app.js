@@ -27,7 +27,7 @@ app.set('view engine', 'ejs');
 // http request Endpoints
 app.get('/', (req,res)=>{
     res.render('pages/index');
-    res.status(404).end()
+    // res.status(404).end()
 });
 app.post('/datalist',(req,res)=>{
   console.log(req.body.bloodType);
@@ -46,15 +46,12 @@ mongoose.connect(process.env.DB_CONNECT,{useNewUrlParser:true,useUnifiedTopology
   .catch((error)=>console.log(error));
 mongoose.Promise = global.Promise;
 
-
-
-
 // port handling
 let port = process.env.PORT;
 if(port== null || port==""){
   port = 3000;
 }
-app.listen(port, ()=>{
+app.listen(port,process.env.IP, ()=>{
     console.log(`your are listening on port : ${port} \nPlease type "localhost:${port}" in your browser.`);
 
 });

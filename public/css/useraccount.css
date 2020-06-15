@@ -174,15 +174,19 @@ body{
     color: #999999;
   }
 
-  .signupform #password-not-matched {
-    background: #F9A5A5;
+  .signupform #password-not-matched,.signupform #password-validation-check,{
     padding: 2px 5px;
     color: #666;
     display: none;
     /* position: relative; */
   }
+  #email_validation_check h6{
+    background: #F9A5A5;
+    color: red;
+    border: 1px 0 1px 0 solid black;
+    /* display: none; */
+  }
   .signupform input[type="button"],.signupform input[type="submit"] {
-    /* box-shadow: 0 3px 0 0 darken($button, 10%); */
     background-color:rgb(43, 185, 102);
     border-radius: 2px;
     border: none;
