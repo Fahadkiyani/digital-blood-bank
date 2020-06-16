@@ -151,10 +151,12 @@ body{
                 padding:6px 6px;
                 border-radius: 6.5px;
                 text-decoration: none;
-                color: #ff4571;
+                color: #999999;
+                opacity: 0.8;
                 margin-left: 15px;
-                font-weight: 300;
-            }.login:hover{cursor: pointer;}
+                font-weight: 100;
+                font-size: 1.5rem;
+            }.login:hover{cursor: pointer;color: #ff4571;opacity: 1;}
             .login-signup-container p{
                 color: #555555;
                 margin:auto 5px;
