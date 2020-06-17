@@ -112,9 +112,9 @@ body{
                 outline: none;
                 color: #e60000;
                 }#bloodType-input:hover{cursor: pointer;}
-                .head-submit-btn {
+                /* .head-submit-btn {
 
-                }
+                } */
                 .head-submit-btn{
                     flex-grow: 1;
                     justify-content: center;
@@ -194,7 +194,6 @@ body{
     }
         .legend-txt-container h1,h3,a{
             line-height: 30px;
-            text-wrap: nowrap;
         }
         .create-account{
             padding: 10px;

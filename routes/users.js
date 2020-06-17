@@ -22,12 +22,12 @@ router.get('/',(req,res)=>{
 })
 
 router.get('/signup', ( req, res)=>{
-    res.render('../views/pages/signup',{emailValidation:''});
+    res.render('../views/pages/signup',{emailValidation:'', signupTitle:'Signup Form | OBB'});
 })
 
 router.get('/login', ( req, res)=>{
-    console.log(req.body);
-    res.render('../views/pages/login');
+    // console.log(req.body);
+    res.render('../views/pages/login',{loginTitle:'Login | OBB'});
 })
 // User signup route Handling, validating and saving data to db.
 router.post('/signup',(req,res)=>{

@@ -104,8 +104,12 @@ body{
             font-size: 15px;
             margin: auto 10px;
         }
-        .signup-header-home-btn .login{
+        .signup-header-home-btn .signup-btn,.signup-header-home-btn .login-btn{
             color: dodgerblue;
+            text-decoration: none;
+        }.signup-header-home-btn .signup-btn:hover{
+          color:rgb(40, 103, 167) ;
+          transition:color ease-in-out 500ms;
         }
 /********* Sigup form ************/
 .signupform form {
