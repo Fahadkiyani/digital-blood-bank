@@ -11,15 +11,16 @@
         <div class="signup-header-home-btn">
             <a class="home" href="/"><i class="fal fa-home-alt"></i>Home</a>
             <p>|</p>
-            <a class="login-btn" href="/user/login"><i class="fal fa-user"></i>Login</a>
+            <a class="login-btn" href="/user/login"><i class="fal fa-user"></i> Login</a>
 
         </div>
     </div>
 
 <div class="signupform">
     <form id="signup" action='' method="">
-        
+            <p class="goback">&lt; Back</p>
             <h2>Sign Up</h2>
+            <div class="first-step"> 
             <h6 id="email-validation-check"> <%= emailValidation %> </h6>
             <div class="signup-name">
                 <p>
@@ -50,11 +51,51 @@
                     <button type="button" onclick="signupNext();">Next</button>
                 </p> -->
                   <p>
-                      <input id="submit" type="submit" value="Next Step">
+                      <input id="nextstep" type="button" value="Next Step">
                   </p>
-                  <p class="already-a-member">
-                      I already have an account: <a href="/user/login">Login</a>
-                  </p>
+                  
+                </div>
+
+
+                  <div class="second-step">
+                  <p>
+                    <label for="blood_type">Blood type</label>
+                    <input list="blood" name="bloodType" id="bloodType" placeholder="Your blood type">
+                    <datalist id="blood">
+                        <option value="A+">
+                        <option value="A-">
+                        <option value="B+">
+                        <option value="B-">
+                        <option value="O+">
+                        <option value="O-">
+                        <option value="AB+">
+                        <option value="AB-">    
+                    </datalist>
+                </p>
+
+                <p>
+                    <label for="last_donnated">last donnated</label>
+                    <input type="text" name="last_donnated" id="last_donnated" placeholder="01/01/2020">
+                </p>
+
+                <p id="address">
+                <label for="st-address">Address</label>
+                <input type="text" name="faddr" class="faddr" placeholder="Street Adress e.g. Street 53rd house no.12 ">
+                <input type="text" name="laddr" class="laddr" placeholder="Second street address. (Optional)">
+                <input type="text" name="city" class="city" placeholder="city name">
+                <input type="text" name="country" class="country" placeholder="Country">
+            </p>
+            <p>
+                <label for="contact">contact:</label>
+                <input type="text" name="contact" id="contact" placeholder="it could start either with &lt;+92&gt; or &lt;03&gt;">
+            </p>
+            <p>
+                <input type="submit" name="submit" id="submit">
+            </p>
+        </div>
+        <p class="already-a-member">
+            I already have an account: <a href="/user/login">Login</a>
+        </p>
     </form>
 </div>
 
