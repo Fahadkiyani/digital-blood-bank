@@ -72,8 +72,8 @@ router.post('/signup',(req,res,next)=>{
          })
         
     },(req,res)=>{
-
-        res.render('../views/pages/signupsuccess');
+        res.redirect('/')
+        // res.render('../views/pages/signupsuccess');
 
         // let name = (userSignup.fname + " " + userSignup.lname).toString();
         //             var string = encodeURIComponent(name);

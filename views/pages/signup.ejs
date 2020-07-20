@@ -17,41 +17,47 @@
     </div>
 
 <div class="signupform">
-    <form id="signup" action='' method="">
+    <form id="signup" action='/user/signup' method="POST">
             <p class="goback">&lt; Back</p>
             <h2>Sign Up</h2>
             <div class="first-step"> 
             <h6 id="email-validation-check"> <%= emailValidation %> </h6>
             <div class="signup-name">
+                <!-- <div class="err-msg">
+
+                </div> -->
                 <p>
                     <label for="fname">First Name</label>
-                    <input id="fname" name="fname" type="text" required>
+                    <input id="fname" class="fname" name="fname" type="text" required>
                 </p>
                 <p>
                     <label for="lname" >Last Name</label>
-                    <input id="lname" name="lname" type="text" required>
+                    <input id="lname" class="lname" name="lname" type="text" required>
                 </p>
             </div>
                   <p>
                       <label for="email" class="floatLabel">Email</label>
-                      <input id="email" name="email" type="text" placeholder=" example@domain.com " required>
+                      <input id="email" class="email" name="email" type="text" placeholder=" name@domain.com " required>
                       
                   </p>
                   <p>
                       <label for="password" class="floatLabel">Password</label>
-                      <input id="password" name="password" type="password" placeholder="Minimum 8 and Maximum 32 " required>
+                      <input id="password" class="password" name="password" type="password" placeholder="Minimum 8 and Maximum 32 " required>
                       <span id="password-validation-check"></span>
                   </p>
                   <p>
                       <label for="confirm_password" class="floatLabel">Confirm Password</label>
-                      <input id="confirm_password" name="confirm_password" type="password" required>
+                      <input id="confirm_password" class="confirm_password" name="confirm_password" type="password" required>
                       <span id="password-not-matched"></span>
+                  </p>
+                  <p class="checkbox-container">
+                      <input type="checkbox" name="checkbox" id="checkbox"> <i class="iagree"> i agree with <a href="">terms and conditions</a> .</i>
                   </p>
                   <!-- <p>
                     <button type="button" onclick="signupNext();">Next</button>
                 </p> -->
                   <p>
-                      <input id="nextstep" type="button" value="Next Step">
+                      <input class="nextstep" id="nextstep" type="button" value="Next Step">
                   </p>
                   
                 </div>
