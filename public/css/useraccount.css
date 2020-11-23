@@ -111,6 +111,9 @@ body{
           color:rgb(40, 103, 167) ;
           transition:color ease-in-out 500ms;
         }
+        .fa-sign-in-alt{
+          margin-right: 5px;
+        }
 /********* Sigup form ************/
 .signupform form {
   background: #fff;

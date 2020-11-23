@@ -183,7 +183,8 @@ body{
     align-items: center;
    flex-direction: row;
    box-shadow: 1px 1px 2px #999999;
-   background-color: #ffdbc5;
+   background-color: rgba(255, 219, 197, 0.891)/*#ffdbc5,#ffdbc5*/;
+   
 }
     .legend-txt-container{
         display: flex;
@@ -236,3 +237,10 @@ body{
     }
 
 }/********* Media landscape ends here **********/
+
+
+
+/************ Hero container tab = hrtb-container************/
+.hrtb-container{
+    padding: 5rem 30px;
+}
