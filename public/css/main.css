@@ -47,6 +47,7 @@ body{
         top: 0;
         left: 0;
         background-color: white;
+        z-index: 100000000000;
     }
 /* logo */
         .logo-container{
@@ -244,3 +245,105 @@ body{
 .hrtb-container{
     padding: 5rem 30px;
 }
+.hrtb-container h3{
+    margin: 0;
+}
+.hrtb-content{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    /* background-color: red; */
+}
+
+.hrtb{
+    margin:10px;
+    /* background-color: hotpink; */
+    border: 1px solid #f0efef;
+    border-radius: 13px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* height: 220px; */
+    min-width: 450px;
+    opacity: 0.99;
+    box-shadow: 2px 2px 5px grey;
+}
+.hrtb:hover{
+    opacity: 1;
+    box-shadow: 3px 3px 10px grey;
+}
+    .hrtb_segment_up{
+    display: flex;
+    flex-direction: row;
+    }
+    .picture{
+        width: 160px;
+        height: 200px;
+        overflow: hidden;
+        background-color: #ededed;
+    }
+    .picture img{
+        width: inherit;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    .nmadr_details{
+        padding: 20px;
+    }
+    .nmadr_details h3,.nmadr_details h6,.nmadr_details p{
+        margin: 0 auto;
+    }
+    .nmadr_details h6,.nmadr_details p{
+        color:#29272c;
+    }
+    .nmadr_details h4{
+        color: rgb(204, 49, 49);
+        margin: 20px auto 6px auto;
+    }
+
+    .hrtb_segment_down{
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        /* background-color: red; */
+    }
+    .hrtb_segment_down .p{
+        width: 160px;
+        color: grey;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 50px;
+    }
+    .hrtb_segment_down p i{
+        font-size: 10px;
+        margin: 0 5px 5px 0;
+    }
+    .hrtb_segment_down .button_1 {
+        padding: 2px 40px;
+        font-size: 0.9rem;
+        text-decoration: none;
+        background-color: seagreen;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        justify-content: flex-start;
+    }
+    /* .hrtb_segment_down .button_2,.hrtb_segment_down .button_3{
+        margin-left: 0.4rem;
+    }
+    .hrtb_segment_down .button_2 i,.hrtb_segment_down .button_3 i{
+        font-size: 2rem;
+        margin-top: 5px;
+        
+    }
+    .hrtb_segment_down .button_2 i{
+        color: #3b5998;
+    }
+    .hrtb_segment_down .button_3 i{
+        color: 	#34B7F1;
+    } */
