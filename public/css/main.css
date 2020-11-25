@@ -178,11 +178,11 @@ body{
 /* legend image */
 .legend-container{
     width: 100vw;
-    height: 500px;
+    height: calc(100vh - 70px)/*500px*/;
     min-width: 800px;
     display: flex;
     align-items: center;
-   flex-direction: row;
+   flex-direction: column;
    box-shadow: 1px 1px 2px #999999;
    background-color: rgba(255, 219, 197, 0.891)/*#ffdbc5,#ffdbc5*/;
    
@@ -236,7 +236,18 @@ body{
     .h11{
         height: 2000px;
     }
-
+    .arrow-container{
+        position: relative;
+        bottom: 10px;
+        height: 40px;
+        width: 25px;
+        border: 1px solid black;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .arrow-container i{
+        margin-top: 5px;
+    }
 }/********* Media landscape ends here **********/
 
 
@@ -247,30 +258,32 @@ body{
 }
 .hrtb-container h3{
     margin: 0;
+    color: #3e3d41;
 }
 .hrtb-content{
-    /* background-color: red; */
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     padding-top: 40px;
-    /* background-color: red; */
 }
 
 .hrtb{
-    margin:10px;
-    /* background-color: hotpink; */
+    margin:10px 5px;
     border: 1px solid #f0efef;
-    border-radius: 13px;
+    border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    /* height: 220px; */
-    min-width: 450px;
+    flex-basis: 1;
+    flex-shrink:2;
+    flex-grow: 4;
     opacity: 0.99;
     box-shadow: 2px 2px 5px grey;
+}
+.hrtb:last-child{
+    flex-basis: 1;
+    flex-grow: 0;
 }
 .hrtb:hover{
     opacity: 1;
@@ -290,7 +303,7 @@ body{
         width: inherit;
         height: 100%;
         object-fit: cover;
-        border-radius: 5px;
+        border-radius: 5px 5px 5px 0;
     }
     .nmadr_details{
         padding: 20px;
