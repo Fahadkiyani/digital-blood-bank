@@ -1,17 +1,21 @@
+
+
 // window.onload(alert("Hello! \nThis website is under-development."));
+let arrowContainer= document.querySelector('.arrow-container');
 let downArrowBounce = document.querySelector('.fa-long-arrow-down');
 setTimeout(() => {
         downArrowBounce.style.color = 'red';
-        downArrowBounce.style.animation
 }, 1000);
 
 
-window.onscroll = function() {scrollControll()};
+window.onscroll = function() {scrollControll()};                  
 
 function scrollControll() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.querySelector('.arrow-container').style.visibility = 'hidden';
+    arrowContainer.style.visibility = 'hidden';
+    
   } else {
-    document.querySelector('.arrow-container').style.visibility = 'visible';
+    arrowContainer.style.visibility = 'visible';
+    arrowContainer.style.tansition = '1000ms ease-in-out';
   }
 }

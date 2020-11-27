@@ -244,9 +244,15 @@ body{
         border: 1px solid black;
         border-radius: 20px;
         text-align: center;
+        
+    }
+    .arrow-container .arrow-down-a{
+        text-decoration: none;
+        color: transparent;
     }
     .arrow-container i{
         margin-top: 5px;
+        transition:color 1000ms ease-in-out;
     }
 }/********* Media landscape ends here **********/
 
