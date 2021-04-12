@@ -39,8 +39,7 @@ Nodejs
 expressjs
 bcrypt
 jwt
-Mongodb(google cloud server)
-
+Mongodb
 
 
 =======
@@ -53,11 +52,9 @@ Yes!
 ## Contributors
 
 - Fahad Kiyani <Fahadkiyani08@gmail.com>
-- Hammad Dilawar <hammad.dilawar1@gmail.com>
-- Maryam Mohiyudin
 
 ---
 
 ## License & Copyright
 
-© FHM bit, Digital blood bank .
+© Digital blood bank .
